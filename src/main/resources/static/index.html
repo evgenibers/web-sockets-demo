@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Demo</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Please enable Javascript</h2></noscript>
+<div class="container" id="main-content">
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-12 text-center">
+            <button class="btn btn-primary" id="connect" type="submit">Connect</button>
+            <button class="btn btn-primary" disabled="disabled" id="disconnect" type="submit">Disconnect</button>
+            <div class="custom-control custom-switch">
+                <input class="custom-control-input" id="connect-as-admin" type="checkbox">
+                <label class="custom-control-label" for="connect-as-admin">Connect as admin</label>
+            </div>
+        </div>
+    </div>
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-2"><label class="col-form-label">Send to user:</label></div>
+        <div class="col-8"><input class="form-control" id="input-user" placeholder="Type here..." type="text" maxlength="50"></div>
+        <div class="col-2"><button class="btn btn-primary" id="send-user" type="submit">Send</button></div>
+    </div>
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-2"><label class="col-form-label">Send to session:</label></div>
+        <div class="col-8"><input class="form-control" id="input-session" placeholder="Type here..." type="text" maxlength="50"></div>
+        <div class="col-2"><button class="btn btn-primary" id="send-session" type="submit">Send</button></div>
+    </div>
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-2"><label class="col-form-label">Send to all:</label></div>
+        <div class="col-8"><input class="form-control" id="input-all" placeholder="Type here..." type="text" maxlength="50"></div>
+        <div class="col-2"><button class="btn btn-primary" id="send-all" type="submit">Send</button></div>
+    </div>
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-2"><label class="col-form-label">Send to admin:</label></div>
+        <div class="col-8"><input class="form-control" id="input-admin" placeholder="Type here..." type="text" maxlength="50"></div>
+        <div class="col-2"><button class="btn btn-primary" id="send-admin" type="submit">Send</button></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped table-hover" id="conversation">
+                <thead><tr><th>Messages</th></tr></thead>
+                <tbody id="messages-list"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
