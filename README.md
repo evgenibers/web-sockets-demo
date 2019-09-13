@@ -7,6 +7,7 @@ It allow you to send echo messages to:
 1. Same session (same tab in browser)
 2. All sessions of user you have login
 3. All sessions of all users    
+
 Also you can login as normal user or as administrator  
 Only administrator can send messages to 'admin' topic 
 
