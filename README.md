@@ -6,7 +6,7 @@ Demo is working but it's still in progress
 It allow you to send echo messages to:  
 1. Same session (same tab in browser)
 2. All sessions of user you have login
-3. All sessions of all users
+3. All sessions of all users    
 Also you can login as normal user or as administrator  
 Only administrator can send messages to 'admin' topic 
 
@@ -27,8 +27,8 @@ mvn spring-boot:run
 When you opened home page you will see something like this:  
 ![Oops!](img1.png)
 Switch "Connect as admin" allows you to choose STOMP endpoints:  
-If it's OFF you will be connected to STOMP endpoint that requires USER rights  
-If it's ON you will need ADMIN rights  
+* If it's OFF you will be connected to STOMP endpoint that requires USER rights  
+* If it's ON you will need ADMIN rights  
 
 "Connect" button allows you to create socket connection  
 "Disconnect" button used to destroy connection  
