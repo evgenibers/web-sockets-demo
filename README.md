@@ -45,7 +45,7 @@ You can check or change it in net.evgenibers.wsd.services.security.MockedUserDet
 
 After that you can send echo messages to different topics (user, session, all, admin)  
 Received messages will be shown in the table "Messages"  
-Message template is: <date-time> <username>: <message_text>  
+Message template is: "date-time" "username": "message_text"  
 
 ## See also
 https://spring.io/guides/gs/messaging-stomp-websocket  
