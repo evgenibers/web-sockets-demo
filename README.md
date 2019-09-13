@@ -25,7 +25,7 @@ mvn spring-boot:run
 3. Go to [**localhost:8080**](http://localhost:8080) in browser to see home page of application
 
 ## How to use
-When you opened home page you will see something like this:  
+On a home page you will see something like this:  
 ![Oops!](img1.png)
 Switch "Connect as admin" allows you to choose STOMP endpoints:  
 * If it's OFF you will be connected to STOMP endpoint that requires USER rights  
@@ -34,7 +34,7 @@ Switch "Connect as admin" allows you to choose STOMP endpoints:
 "Connect" button allows you to create socket connection  
 "Disconnect" button used to destroy connection  
 
-When you press connect button browser will asked you for credentials  
+After pressing connect button browser will ask you for credentials  
 Default user credentials are:  
 - username: user  
 - password: userpassword  
