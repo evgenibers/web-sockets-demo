@@ -49,7 +49,7 @@ Message template is: "date-time" "username": "message_text"
 
 ## See also
 https://spring.io/guides/gs/messaging-stomp-websocket  
-https://en.wikipedia.org/wiki/Streaming_Text_Oriented_Messaging_Protocol
+https://en.wikipedia.org/wiki/Streaming_Text_Oriented_Messaging_Protocol  
 https://www.baeldung.com/spring-security-websockets  
 https://www.baeldung.com/spring-websockets-sendtouser  
 http://jmesnil.net/stomp-websocket/doc/  
